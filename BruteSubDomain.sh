@@ -3,6 +3,10 @@
 domain=$1
 wordlist=$2
 codes=(200 301 302 403)
+if [[ $1 -eq "" ]]
+    then
+        echo " usage : ./BruteSubDomain domain wordlist"
+        fi
 while read words
 do
 	status=curl -L -I -X "GET" -H "User-Agent: Mozilla/5.0 (Windows NT
