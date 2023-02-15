@@ -6,6 +6,7 @@ codes=(200 301 302 403)
 if [[ $1 -eq "" ]]
     then
         echo " usage : ./BruteSubDomain domain wordlist"
+        exit
         fi
 while read words
 do
